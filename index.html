@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       .home{
+        height: 100vh;
+        width: 100%;
+        background: red;
+        background-image: url(./tea.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        
+       }
+       .header{
+        height: 8vh;
+        width: 95%;
+        background-color: rgba(255, 217, 0, 0.878);
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+       }
+       .logo{
+        height: 5vh ;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+
+
+       }
+       #menu-icon{
+        display: none;
+        height: 5vh;
+       }
+       .logo img{
+        height: 5vh ;
+        width: 150px;
+        
+        border-radius: 10px;
+       }
+       .home-section a{
+          color: black;
+          text-decoration: none;
+          margin-left: 20px;
+          font-size: 18px;
+          cursor: pointer;
+       }
+       .active{
+          background-color: white;
+          text-align: center;
+          transition: .3s ease-in;
+       }
+       .home-section a:hover{
+        /* font-size: 19px; */
+        font-weight: bold;
+        /* background-color: white; */
+       }
+      
+       .text{
+         width: 100px;
+         height: 3vh;
+       
+       }
+       .btn{
+        width: 100px;
+        height: 3vh;
+ 
+       }
+       .home2{
+        color: white;
+        width: 95%;
+        margin: auto;
+      
+
+       }
+       .home3{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 20px;
+        padding-top: 105px;
+        width: 100%;
+        height: 100%;
+       }
+       .home3 h1{
+        font-size: 65px;
+       }
+       .home3 p{
+        font-size: 25px;
+       }
+       .btn2{
+        width: 150px;
+        height: 50px;
+        margin-left:180px ;
+        border-radius: 20px;
+       }
+       .btn2:hover{
+         background: gold;
+         transition: .5s ease-in;
+
+       }
+      
+        
+     
+       @media (max-width:970px) {
+             .home-section, .form{
+               display: none;
+             }
+             .logo{
+                width: 95%;
+                font-size: 50px;
+             }
+             .logo #menu-icon{
+                display: block;
+                align-items: center;    
+             }
+             .home3 h1{
+                font-size: 35px;
+             }
+             .home p{
+                font-size: 20px;
+             }
+             .home3 .btn2{
+                margin-left: 0px;
+             }
+       }
+
+       /* about */
+       .about{
+        min-height: 100vh;
+        height: auto;
+        width: 100%;
+        background: linear-gradient(to right,rgb(55, 46, 43),rgb(241, 238, 238));
+
+       }
+       span{
+        color: gold;
+       }
+       .center{
+        width: 80%;
+        height: 70vh;
+        margin: 90px auto;
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+
+       }.about-left{
+        width: 50%;
+        height: 50%;
+        
+       }
+       .about-right{
+        height: 50%;
+        width: 50%;
+       }
+
+       .about-left img{
+        width:100% ;
+        height: 100%;
+        box-shadow: 16px 16px 10px  white;
+        
+       }
+       .about-right{
+        padding-left: 20px;
+        overflow: hidden;
+       }
+       .hero{
+           text-align: center;
+           align-items: center;
+          
+         }
+       
+        .menu{
+            min-height: 40vh;
+            width: 80% ;
+            margin: auto;
+            background-color: antiquewhite;
+
+        }
+        .menu h1{
+            text-align: center;
+            padding: 20px;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+           flex-wrap: wrap;
+           align-items: center;
+           text-align: center;
+           margin: auto;
+        }
+
+        .box-img{
+            height: 40vh;
+            width: 400px;
+            padding-top: 10px;
+            
+        }
+        .box-img img{
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 16px 16px 16px  red;
+
+            transition: 0.4s ease-in-out;
+
+        }
+        .box-img img:hover{
+            scale: 0.9;
+            box-shadow: 16px 16px 16px  black;
+
+        }
+        .menu2{
+             min-height: 80vh;
+             height: auto;
+            width: 80%;
+            background-color: aqua;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .menu2 span{
+       
+            display: flex;
+            justify-content: center;
+            border-bottom: 5px solid black;
+
+        }
+        .hellow{
+            height: 300px;
+            width: 220px;
+            background: red;
+        }
+        .hellow-img{
+            height:50%;
+            width: 100%;
+        }
+        .hellow-img img{
+            height: 100%;
+            padding: 10px;
+
+            width: 100%;
+        }
+        .hellow3{
+            display: flex;
+          
+            justify-content: space-between;
+            padding: 30px 20px;
+
+        }
+        .hellow h1{
+            height:20px ;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+        .btn3{
+            width: 100%;
+            height: 25px;
+           
+        }
+        .btn1{
+            width: 80px;
+             height: 25px;
+             border-radius: 10px;
+             margin-left: 70px;
+       
+        }
+        .parent{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 10px ;
+            padding-bottom: 10px;
+        }
+        .btn1:hover{
+              background-color: gold;
+              scale: 1.1;
+        }
+        .banner{
+            height: 30vh;
+            width: 100%;
+           background-image: url(./alex5.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .banner-box{
+            width: 30%;
+            height: 30vh;
+            background: gold;
+            border-top-right-radius: 150px;
+            border-bottom-right-radius: 150px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            padding: 10px;
+            justify-content: center;
+
+        }
+        .banner2{
+            margin-top: 20px;
+            height: 30vh;
+            width: 100%;
+           background-image: url(./alex4.jpg);
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .banner-box2{
+            width: 400px;
+            height: 30vh;
+            background: gold;
+            border-top-right-radius: 150px;
+            border-bottom-right-radius: 150px;
+            display: flex;
+            flex-direction: column;
+        
+            padding: 10px;
+            justify-content: center;
+
+        }
+        .banner-box3{
+            height: 15vh;
+            width: 250px;
+            padding: 20px;
+            margin-left: 260px;
+            background-color: greenyellow;
+
+        }
+        .gallary{
+            min-height: 80vh;
+            height: auto;
+            width: 100%;
+            margin: auto;
+            background-color: rgb(217, 236, 236);
+        }
+        .gallary h1{
+            text-align: center;
+        }
+       .gallary-border{
+        border: 3px solid black;
+       }
+       .gallary-box{
+        width: 80%;
+        padding: 30px;
+        min-height: 70vh;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        gap: 20px;
+        justify-content: space-around;
+        background-color: rgb(50, 56, 53);
+       }
+       .gallary-box1{
+        width: 350px;
+        height: 300px;
+       }
+       .gallary-box1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        box-shadow: 16px 16px 16px rgb(14, 240, 29);
+        transition: .4s ease;
+       }
+       .gallary-box1 img:hover{
+        scale: 1.1;
+        box-shadow: 16px 16px 16px rgb(78, 81, 78);
+
+       }
+       .form1{
+        min-height:100vh ;
+        width: 90%;
+        margin: auto;
+        background-color: rgb(246, 249, 249);
+        /* z-index: 10000; */
+        display: block;
+
+       }
+       .mango{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        padding-top: 20px;
+       }
+       .form1-left{
+        width: 600px;
+        height: 90vh;
+        background-color: rgb(249, 248, 247);
+        }
+        .form1-left h1{
+            font-size: 45px;
+            padding-top: 80px;
+            padding-left: 15px;
+
+        }
+        .form1-left p{
+            font-size: 25px;
+            padding-top: 20px;
+            padding-left:15px ;
+        }
+        .form1-left .byy{
+            width: 360px;
+            margin-top: 50px;
+            margin-left: 15px;
+            height: 40px;
+            background: transparent;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            color: black;
+            border-bottom: 2px solid ;
+        }
+        .btnn{
+            margin-left:75px ;
+            margin-top: 50px;
+            width: 230px;
+            font-size: 20px;
+            height: 40px;
+            border-radius: 20px;
+             cursor: pointer;  
+             transition: .3s all ease;
+        }
+        .btnn:hover{
+            scale: 1.1;
+            background-color: gold;
+        }
+
+
+       .form1-right{
+        width: 600px;
+        height: 90vh;
+        background-color: rgb(248, 248, 251);
+       }
+
+       .rightt{
+        height: 100%;
+        width: 30vh;
+        background-color: rgb(130, 120, 44);
+        margin-left: 335px;
+        position: relative;
+       }
+       .righttt{
+       
+        width: 50vh;
+        padding-left: 10px;
+        height:400px ;
+        background-color: black;
+            padding-top: 30px;
+        color:white;
+          position: absolute;
+          top: 20px;
+          right: 50px;
+
+       }
+       .header{
+        height: 12vh;
+       }
+
+       @media (max-width:600px) {
+        .hellow{
+            width:100% ;
+        }
+       }
+
+   
+      
+
+
+
+    </style>
+</head>
+<body>
+    <div class="home" id="home">
+    <div class="header">
+        <div class="logo">
+            <img src="./alex4.jpg" width="10" alt="">
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+        </div>
+
+        <div class="home-section">
+            <a href="#Home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#banner">Banner</a>
+            <a href="#gallary">Gallary</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">Blogs</a>
+        </div>
+      <form action="" class="form">
+      <input type="text" class="text" placeholder="search..."><button class="btn">Search</button>
+      </form>
+    </div>
+    <div class="home2">
+          <div class="home3">
+        <h1>Start Your Day With a <br>
+        <span >Fresh Coffee</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non <br> soluta itaque, earum molestiae nisi placeat!</p>
+        <button class="btn2">Shop Now</button>
+    </div>
+     </div>
+</div>
+<div class="about" id="about">
+<span class="hero">About Us</span>
+
+ <div class="center">
+
+    <div class="about-left"><img src="./f.jpg" alt=""></div>
+    <div class="about-right"> 
+        <h2><u>What Makes Our Coffee Specia</u> </h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur aspernatur, <br> illo quidem non porro fuga?</p> <br>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, non.</p> <br>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, non.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur aspernatur, <br> illo quidem non porro fuga?</p> <br>
+
+        <p>Lorem ipsum dolor sit amet consectetur, </p> <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, non.</p> <br>
+        <br>
+
+     
+        <button class="btn">Learn More</button>
+    </div>
+ </div>
+</div>
+<!-- menu -->
+  <div class="menu">
+    <h1>Top <span>Categories</span></h1>
+    <div class="box">
+        <div class="box-img"><img src="./alex3.jpg" alt=""></div>
+        <div class="box-img"><img src="./alex3.jpg" alt=""></div>
+        <div class="box-img"><img src="./alex3.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <!-- menu -->
+  <div class="menu2" id="menu">
+
+    <h1> <span>Menu</span></h1>
+     <div class="parent">
+    <div class="hellow">
+    <div class="hellow-img">
+       <img src="./alex6.jpg" alt="">    
+    </div>
+    <h1>Coffee</h1>
+
+    <div class="hellow3">
+        <div class="hellow1">599 =  <del>799</del>off</div>
+                    <i class='bx bx-bar-chart-alt'></i>
+                    <div class="hellow2">  </div>
+    </div>
+    <div class="btn-3">
+    <button class="btn1">Shop Now</button></div>
+     </div>
+
+     <div class="hellow">
+        <div class="hellow-img">
+           <img src="./alex6.jpg" alt="">    
+        </div>
+        <h1>Coffee</h1>
+        <div class="hellow3">
+            <div class="hellow1">599 =  <del>799</del>off</div>
+                        <i class='bx bx-bar-chart-alt'></i>
+                        <div class="hellow2">  </div>
+        </div>
+        <div class="btn-3">
+        <button class="btn1">Shop Now</button></div>
+    
+    
+    </div>
+    <div class="hellow">
+        <div class="hellow-img">
+           <img src="./alex6.jpg" alt="">    
+        </div>
+        <h1>Coffee</h1>
+    
+        <div class="hellow3">
+            <div class="hellow1">599 =  <del>799</del>off</div>
+                        <i class='bx bx-bar-chart-alt'></i>
+                        <div class="hellow2">  </div>
+        </div>
+        <div class="btn-3">
+        <button class="btn1">Shop Now</button></div>
+         </div>
+    
+         <div class="hellow">
+            <div class="hellow-img">
+               <img src="./alex6.jpg" alt="">    
+            </div>
+            <h1>Coffee</h1>
+            <div class="hellow3">
+                <div class="hellow1">599 =  <del>799</del>off</div>
+                            <i class='bx bx-bar-chart-alt'></i>
+                            <div class="hellow2">  </div>
+            </div>
+            <div class="btn-3">
+            <button class="btn1">Shop Now</button></div>
+        
+        
+        </div>
+        <div class="hellow">
+            <div class="hellow-img">
+               <img src="./alex6.jpg" alt="">    
+            </div>
+            <h1>Coffee</h1>
+        
+            <div class="hellow3">
+                <div class="hellow1">599 =  <del>799</del>off</div>
+                            <i class='bx bx-bar-chart-alt'></i>
+                            <div class="hellow2">  </div>
+            </div>
+            <div class="btn-3">
+            <button class="btn1">Shop Now</button></div>
+             </div>
+        
+             <div class="hellow">
+                <div class="hellow-img">
+                   <img src="./alex6.jpg" alt="">    
+                </div>
+                <h1>Coffee</h1>
+                <div class="hellow3">
+                    <div class="hellow1">599 =  <del>799</del>off</div>
+                                <i class='bx bx-bar-chart-alt'></i>
+                                <div class="hellow2">  </div>
+                </div>
+                <div class="btn-3">
+                <button class="btn1">Shop Now</button></div>
+            
+            
+            </div>
+            <div class="hellow">
+                <div class="hellow-img">
+                   <img src="./alex6.jpg" alt="">    
+                </div>
+                <h1>Coffee</h1>
+            
+                <div class="hellow3">
+                    <div class="hellow1">599 =  <del>799</del>off</div>
+                                <i class='bx bx-bar-chart-alt'></i>
+                                <div class="hellow2">  </div>
+                </div>
+                <div class="btn-3">
+                <button class="btn1">Shop Now</button></div>
+                 </div>
+            
+                 <div class="hellow">
+                    <div class="hellow-img">
+                       <img src="./alex6.jpg" alt="">    
+                    </div>
+                    <h1>Coffee</h1>
+                    <div class="hellow3">
+                        <div class="hellow1">599 =  <del>799</del>off</div>
+                                    <i class='bx bx-bar-chart-alt'></i>
+                                    <div class="hellow2">  </div>
+                    </div>
+                    <div class="btn-3">
+                    <button class="btn1">Shop Now</button></div>
+                
+                
+                </div>
+                <div class="hellow">
+                    <div class="hellow-img">
+                       <img src="./alex6.jpg" alt="">    
+                    </div>
+                    <h1>Coffee</h1>
+                
+                    <div class="hellow3">
+                        <div class="hellow1">599 =  <del>799</del>off</div>
+                                    <i class='bx bx-bar-chart-alt'></i>
+                                    <div class="hellow2">  </div>
+                    </div>
+                    <div class="btn-3">
+                    <button class="btn1">Shop Now</button></div>
+                     </div>
+                
+                     <div class="hellow">
+                        <div class="hellow-img">
+                           <img src="./alex6.jpg" alt="">    
+                        </div>
+                        <h1>Coffee</h1>
+                        <div class="hellow3">
+                            <div class="hellow1">599 =  <del>799</del>off</div>
+                                        <i class='bx bx-bar-chart-alt'></i>
+                                        <div class="hellow2">  </div>
+                        </div>
+                        <div class="btn-3">
+                        <button class="btn1">Shop Now</button></div>
+                    
+                    
+                    </div>
+</div>  
+  </div>
+
+  <!-- banner -->
+
+  <div class="banner" id="banner">
+           <div class="banner-box"> 
+            <h1>Jitesh <span style="color: red;">K</span>aushik</h1>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Maxime, atque!</p>
+        </div>
+ </div>
+ <div class="banner2" id="banner">
+    <div class="banner-box2"> 
+        <div class="banner-box3">
+     <h1>Jitesh <span style="color: red;">K</span>aushik</h1>
+     <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Maxime, atque!</p>
+    </div>
+ </div>
+</div>
+
+<div class="gallary" id="gallary">
+    <h1>Our <span>Gallary</span></h1>
+    <div class="gallary-border"></div>
+    <div class="gallary-box">
+        <div class="gallary-box1"> <img src="./alex1.jpg" alt=""></div>
+        <div class="gallary-box1"> <img src="./alex2.jpg" alt=""></div>
+        <div class="gallary-box1"> <img src="./alex3.jpg" alt=""></div>
+        <div class="gallary-box1"> <img src="./alex4.jpg" alt=""></div>
+        <div class="gallary-box1"> <img src="./alex6.jpg" alt=""></div>
+        <div class="gallary-box1"> <img src="./alex5.jpg" alt=""></div>
+
+    </div>
+</div>
+
+<div class="form1" id="contact">
+
+    <div class="mango">
+    <div class="form1-left">
+    <h1>Contact <span>Us</span> </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempora eligendi optio dignissimos aperiam quasi sapiente vel harum doloribus nam.</p>
+
+    <form action="" class="form2">
+        <input type="text" placeholder="Name" class="byy"> <br>
+        <input type="email" placeholder="Email" class="byy"> <br>
+        <input type="tel:" placeholder="Phone" class="byy"> <br>
+        <button class="btnn">Send Message</button>
+    </form>
+    </div>
+
+    <div class="form1-right">
+         <div class="rightt"> 
+            <div class="righttt">
+                <h2>Info</h2>
+                <h2>Example</h2>
+                <h2>698854555784</h2>
+                <h2>adsj ilajdndud979 ksn ksd</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet numquam magnam et rerum ratione debitis at soluta quod repellendus?</p>
+            </div>
+         </div>
+         
+    </div>
+</div>
+</div>
+    
+</body>
+</html>
